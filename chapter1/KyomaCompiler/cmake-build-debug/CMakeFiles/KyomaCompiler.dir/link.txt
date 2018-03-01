@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2017.3.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\KyomaCompiler.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\KyomaCompiler.dir/objects.a @CMakeFiles\KyomaCompiler.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\KyomaCompiler.dir/objects.a -Wl,--no-whole-archive  -o KyomaCompiler.exe -Wl,--out-implib,libKyomaCompiler.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\KyomaCompiler.dir\linklibs.rsp
