@@ -1,8 +1,3 @@
-//
-// Created by kyoma on 2018/3/3.
-//
-
-#include "errormsg.h"
 /*
  * errormsg.c - functions used in all phases of the compiler to give
  *              error messages about the Tiger program.

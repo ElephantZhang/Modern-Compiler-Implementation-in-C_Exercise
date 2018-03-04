@@ -85,9 +85,6 @@
 		<Unit filename="C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/errormsg.h">
 			<Option target="chapter2"/>
 		</Unit>
-		<Unit filename="C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/main.c">
-			<Option target="chapter2"/>
-		</Unit>
 		<Unit filename="C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/tokens.h">
 			<Option target="chapter2"/>
 		</Unit>

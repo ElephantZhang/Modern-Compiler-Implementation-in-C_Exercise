@@ -176,33 +176,6 @@ errormsg.c.s:
 	$(MAKE) -f CMakeFiles\chapter2.dir\build.make CMakeFiles/chapter2.dir/errormsg.c.s
 .PHONY : errormsg.c.s
 
-main.obj: main.c.obj
-
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\chapter2.dir\build.make CMakeFiles/chapter2.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\chapter2.dir\build.make CMakeFiles/chapter2.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\chapter2.dir\build.make CMakeFiles/chapter2.dir/main.c.s
-.PHONY : main.c.s
-
 util.obj: util.c.obj
 
 .PHONY : util.obj
@@ -245,9 +218,6 @@ help:
 	@echo ... errormsg.obj
 	@echo ... errormsg.i
 	@echo ... errormsg.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
 	@echo ... util.obj
 	@echo ... util.i
 	@echo ... util.s

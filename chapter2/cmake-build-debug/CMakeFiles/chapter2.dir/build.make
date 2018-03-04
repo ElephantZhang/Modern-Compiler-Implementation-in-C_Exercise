@@ -56,33 +56,9 @@ include CMakeFiles/chapter2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/chapter2.dir/flags.make
 
-CMakeFiles/chapter2.dir/main.c.obj: CMakeFiles/chapter2.dir/flags.make
-CMakeFiles/chapter2.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/chapter2.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chapter2.dir\main.c.obj   -c C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\main.c
-
-CMakeFiles/chapter2.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/chapter2.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\main.c > CMakeFiles\chapter2.dir\main.c.i
-
-CMakeFiles/chapter2.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/chapter2.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\main.c -o CMakeFiles\chapter2.dir\main.c.s
-
-CMakeFiles/chapter2.dir/main.c.obj.requires:
-
-.PHONY : CMakeFiles/chapter2.dir/main.c.obj.requires
-
-CMakeFiles/chapter2.dir/main.c.obj.provides: CMakeFiles/chapter2.dir/main.c.obj.requires
-	$(MAKE) -f CMakeFiles\chapter2.dir\build.make CMakeFiles/chapter2.dir/main.c.obj.provides.build
-.PHONY : CMakeFiles/chapter2.dir/main.c.obj.provides
-
-CMakeFiles/chapter2.dir/main.c.obj.provides.build: CMakeFiles/chapter2.dir/main.c.obj
-
-
 CMakeFiles/chapter2.dir/driver.c.obj: CMakeFiles/chapter2.dir/flags.make
 CMakeFiles/chapter2.dir/driver.c.obj: ../driver.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/chapter2.dir/driver.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/chapter2.dir/driver.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chapter2.dir\driver.c.obj   -c C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\driver.c
 
 CMakeFiles/chapter2.dir/driver.c.i: cmake_force
@@ -106,7 +82,7 @@ CMakeFiles/chapter2.dir/driver.c.obj.provides.build: CMakeFiles/chapter2.dir/dri
 
 CMakeFiles/chapter2.dir/errormsg.c.obj: CMakeFiles/chapter2.dir/flags.make
 CMakeFiles/chapter2.dir/errormsg.c.obj: ../errormsg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/chapter2.dir/errormsg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/chapter2.dir/errormsg.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chapter2.dir\errormsg.c.obj   -c C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\errormsg.c
 
 CMakeFiles/chapter2.dir/errormsg.c.i: cmake_force
@@ -130,7 +106,7 @@ CMakeFiles/chapter2.dir/errormsg.c.obj.provides.build: CMakeFiles/chapter2.dir/e
 
 CMakeFiles/chapter2.dir/util.c.obj: CMakeFiles/chapter2.dir/flags.make
 CMakeFiles/chapter2.dir/util.c.obj: ../util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/chapter2.dir/util.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/chapter2.dir/util.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\chapter2.dir\util.c.obj   -c C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\util.c
 
 CMakeFiles/chapter2.dir/util.c.i: cmake_force
@@ -154,7 +130,6 @@ CMakeFiles/chapter2.dir/util.c.obj.provides.build: CMakeFiles/chapter2.dir/util.
 
 # Object files for target chapter2
 chapter2_OBJECTS = \
-"CMakeFiles/chapter2.dir/main.c.obj" \
 "CMakeFiles/chapter2.dir/driver.c.obj" \
 "CMakeFiles/chapter2.dir/errormsg.c.obj" \
 "CMakeFiles/chapter2.dir/util.c.obj"
@@ -162,7 +137,6 @@ chapter2_OBJECTS = \
 # External object files for target chapter2
 chapter2_EXTERNAL_OBJECTS =
 
-chapter2.exe: CMakeFiles/chapter2.dir/main.c.obj
 chapter2.exe: CMakeFiles/chapter2.dir/driver.c.obj
 chapter2.exe: CMakeFiles/chapter2.dir/errormsg.c.obj
 chapter2.exe: CMakeFiles/chapter2.dir/util.c.obj
@@ -170,7 +144,7 @@ chapter2.exe: CMakeFiles/chapter2.dir/build.make
 chapter2.exe: CMakeFiles/chapter2.dir/linklibs.rsp
 chapter2.exe: CMakeFiles/chapter2.dir/objects1.rsp
 chapter2.exe: CMakeFiles/chapter2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable chapter2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\kyoma\CLionProjects\Modern-Compiler-Implementation-in-C_Exercise\chapter2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable chapter2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\chapter2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -178,7 +152,6 @@ CMakeFiles/chapter2.dir/build: chapter2.exe
 
 .PHONY : CMakeFiles/chapter2.dir/build
 
-CMakeFiles/chapter2.dir/requires: CMakeFiles/chapter2.dir/main.c.obj.requires
 CMakeFiles/chapter2.dir/requires: CMakeFiles/chapter2.dir/driver.c.obj.requires
 CMakeFiles/chapter2.dir/requires: CMakeFiles/chapter2.dir/errormsg.c.obj.requires
 CMakeFiles/chapter2.dir/requires: CMakeFiles/chapter2.dir/util.c.obj.requires

@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/driver.c" "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/cmake-build-debug/CMakeFiles/chapter2.dir/driver.c.obj"
   "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/errormsg.c" "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/cmake-build-debug/CMakeFiles/chapter2.dir/errormsg.c.obj"
-  "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/main.c" "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/cmake-build-debug/CMakeFiles/chapter2.dir/main.c.obj"
   "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/util.c" "C:/Users/kyoma/CLionProjects/Modern-Compiler-Implementation-in-C_Exercise/chapter2/cmake-build-debug/CMakeFiles/chapter2.dir/util.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

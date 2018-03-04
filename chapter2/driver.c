@@ -31,14 +31,19 @@ string tokname(int tok) {
 int main(int argc, char **argv) {
     string fname;
     int tok;
-    if (argc!=2) {fprintf(stderr,"usage: a.out filename\n"); exit(1);}
+    if (argc!=2) {
+        fprintf(stderr,"usage: a.out filename\n");
+        exit(1);
+    }
     fname=argv[1];
     EM_reset(fname);
     for(;;) {
         tok=yylex();
-        if (tok==0) break;
+        if (tok==0)
+            break;
         switch(tok) {
-            case ID: case STRING:
+            case ID:
+            case STRING:
                 printf("%10s %4d %s\n",tokname(tok),EM_tokPos,yylval.sval);
                 break;
             case INT:

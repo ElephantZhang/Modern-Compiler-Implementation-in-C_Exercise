@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/chapter2.dir/main.c.obj"
   "CMakeFiles/chapter2.dir/driver.c.obj"
   "CMakeFiles/chapter2.dir/errormsg.c.obj"
   "CMakeFiles/chapter2.dir/util.c.obj"

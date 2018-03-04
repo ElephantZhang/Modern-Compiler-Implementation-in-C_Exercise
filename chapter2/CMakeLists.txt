@@ -3,4 +3,4 @@ project(chapter2 C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(chapter2 main.c driver.c errormsg.c errormsg.h tokens.h util.c util.h)
+add_executable(chapter2 driver.c errormsg.c errormsg.h tokens.h util.c util.h)
