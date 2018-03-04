@@ -1,8 +1,3 @@
-//
-// Created by kyoma on 2018/3/3.
-//
-
-#include "util.h"
 /*
  * util.c - commonly used utility functions.
  */
@@ -11,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "util.h"
+<<<<<<< HEAD
 void *checked_malloc(int len) {
     void *p = malloc(len);
     if (!p) {
@@ -31,4 +27,26 @@ U_boolList U_BoolList(bool head, U_boolList tail) {
     list->head = head;
     list->tail = tail;
     return list;
+=======
+void *checked_malloc(int len)
+{void *p = malloc(len);
+ if (!p) {
+    fprintf(stderr,"\nRan out of memory!\n");
+    exit(1);
+ }
+ return p;
+}
+
+string String(char *s)
+{string p = checked_malloc(strlen(s)+1);
+ strcpy(p,s);
+ return p;
+}
+
+U_boolList U_BoolList(bool head, U_boolList tail)
+{ U_boolList list = checked_malloc(sizeof(*list));
+  list->head = head;
+  list->tail = tail;
+  return list;
+>>>>>>> 2cec5b0ba36c1d1d57e49ea1e28d6d3942e21443
 }

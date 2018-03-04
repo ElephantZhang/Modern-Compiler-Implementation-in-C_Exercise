@@ -1,14 +1,8 @@
-//
-// Created by kyoma on 2018/3/3.
-//
-
-#ifndef CHAPTER2_TOKENS_H
-#define CHAPTER2_TOKENS_H
 typedef union  {
-    int pos;
-    int ival;
-    string sval;
-} YYSTYPE;
+	int pos;
+	int ival;
+	string sval;
+	} YYSTYPE;
 extern YYSTYPE yylval;
 
 # define ID 257
@@ -55,5 +49,3 @@ extern YYSTYPE yylval;
 # define VAR 298
 # define TYPE 299
 
-
-#endif //CHAPTER2_TOKENS_H
