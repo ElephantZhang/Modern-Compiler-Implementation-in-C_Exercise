@@ -33,7 +33,7 @@ function readint(any: any) : int =
    else if a.first < b.first 
       then list{first=a.first,rest=merge(a.rest,b)}
       else list{first=b.first,rest=merge(a,b.rest)}
-
+      
  function printint(i: int) =
   let function f(i:int) = if i>0 
 	     then (f(i/10); print(chr(i-i/10*10+ord("0"))))

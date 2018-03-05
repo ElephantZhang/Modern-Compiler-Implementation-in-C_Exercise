@@ -4,3 +4,8 @@
   The IDE I used is CLion. Each exercise of a chapter is a CLion project so that we can open it automatically in CLion. The file structure of chapter1 was written by myself, so it's very different from the one which the book provided in the page www.cs.princeton.edu/~appel/modern/c/ .
   
   But I will follow the [Tiger compiler modeles for programming exercises](http://www.cs.princeton.edu/~appel/modern/c/) from chapter2.
+  
+  # Process
+  * chapter 1 : done
+  * chapter 2 : done
+  * chapter 3 : processing
