@@ -22,14 +22,15 @@ void adjust(void)
 %}
 
 %%
-\".*?\"     {adjust(); yylval.sval=String(yytext); return STRING;}
-\/\*.*?\*\/     {adjust(); EM_newline()}
+
+\"[^\"]*\"     {adjust(); yylval.sval=String(yytext); return STRING;}
+\/\*.*?\*\/     {adjust(); continue;}
 
 
 " "	 {adjust(); continue;}
 \n	 {adjust(); EM_newline(); continue;}
+\t   {adjust(); EM_newline(); continue;}
 ","	 {adjust(); return COMMA;}
-.	 {adjust(); EM_error(EM_tokPos,"illegal token");}
 ":"     {adjust(); return COLON;}
 ";"     {adjust(); return SEMICOLON;}
 "("     {adjust(); return LPAREN;}
@@ -43,7 +44,7 @@ void adjust(void)
 "-"     {adjust(); return MINUS;}
 "*"     {adjust(); return TIMES;}
 "/"     {adjust(); return DIVIDE;}
-"=="     {adjust(); return EQ;}
+"="     {adjust(); return EQ;}
 "<>"    {adjust(); return NEQ;}
 "<"     {adjust(); return LT;}
 "<="    {adjust(); return LE;}
@@ -73,5 +74,7 @@ function {adjust(); return FUNCTION;}
 var      {adjust(); return VAR;}
 type     {adjust(); return TYPE;}
 
-[a-zA-Z]+[a-zA-Z0-9|_]*     {adjust(); yylval.ival=String(yytext); return ID;}
+[a-zA-Z][a-zA-Z0-9|_]*     {adjust(); yylval.sval=String(yytext); return ID;}
+
+.	 {adjust(); EM_error(EM_tokPos,"illegal token");}
 
