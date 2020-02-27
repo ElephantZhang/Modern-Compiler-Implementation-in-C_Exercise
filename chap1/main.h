@@ -24,11 +24,12 @@ struct IntAndTable{
 
 
 struct IntAndTable interpExp(A_exp exp, Table_ t);
-
 Table_ Table(string id, int value, struct table *tail);
-
 Table_ interpStm(A_stm stm, Table_ tab);
-
+Table_ update(Table_ t, string key, int value);
+IntAndTable_ intAndTable(int val, Table_ t);
+int lookup(Table_ t, string key);
+int maxargs(A_stm stm);
 
 
 #endif /* main_h */
