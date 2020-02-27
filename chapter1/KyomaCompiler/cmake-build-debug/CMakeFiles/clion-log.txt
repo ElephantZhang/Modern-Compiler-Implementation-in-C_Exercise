@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.3.3\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\kyoma\CLionProjects\KyomaCompiler
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/kyoma/CLionProjects/KyomaCompiler/cmake-build-debug
