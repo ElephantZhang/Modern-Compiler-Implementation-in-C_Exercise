@@ -1,0 +1,1 @@
+Use `make` to build, Lex will run on tiger.lex, producing lex.yy.c, and then the appropriate C files will be compiled. Finally, `lextest` will lexically analyze the file using a test scaffold e.g `lextest tigercode.tig`. The script testAll.sh will run `lextest` to each file in `../testcases/` and the results will be printed into file testResult.
