@@ -84,12 +84,9 @@ char* edit_string(void){
 \n									{adjust(); EM_newline(); continue;}
 \r									{adjust(); continue;}
 
-<INITIAL>\"							{adjust(); BEGIN STRING_STA;}
-<STRING_STA>\"						{adjust(); BEGIN INITIAL;}
-<STRING_STA>\n						{adjust(); EM_error(EM_tokPos, "illegal tokens");}
- /* now for strings, we support \" \\ inside it. single \ is not permitted */
-<STRING_STA>((\\\")*(\\\\)*(\\n)*(\\r)*(\\t)*[^\"\n\r\\]*)*			{
-	adjust(); yylval.sval=yytext; return STRING;
+ /* Strings, allow \", \\, \n, \r, \t inside a string, but do not allow \ appears alone */
+<INITIAL>\"((\\\")*(\\\\)*(\\n)*(\\r)*(\\t)*[^\"\n\r\\]*)*\"	{
+	adjust(); yylval.sval=edit_string(); return STRING;
 }
 <INITIAL>[a-zA-Z][a-zA-Z0-9"_"]*	{adjust(); yylval.sval=yytext; return ID;}
 

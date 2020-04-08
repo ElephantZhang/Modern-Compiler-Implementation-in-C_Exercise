@@ -2,5 +2,7 @@
 "abtttt"
 "This test \" works or not"
 "How about \\ and \n"
+"line1
+line2"
 aaa bb cc
 )(
