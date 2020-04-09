@@ -31,12 +31,104 @@ void yyerror(char *s)
   FUNCTION VAR TYPE 
 
 %start program
+/* When the rule and token have equal priority, then a %left precedence favors 
+reducing, %right favors shifting, and %nonassoc yields an error action. */
+
+%right OF
+%nonassoc DO
+%nonassoc LOWER_THAN_ELSE
+%nonassoc ELSE
+%nonassoc ASSIGN
+%left AND OR
+%nonassoc EQ NEQ LT GT LE GE
+%left PLUS MINUS
+%left TIMES DIVIDE
 
 %%
 
-program:	exp
+program	:	exp
 
-exp:   ID
+decs	:	/* epsilon */	
+		|	dec decs
+		;
+dec		:	typec
+		|	vardec
+		|	fundec
+		;
+typec	:	TYPE type_id EQ ty
+		;
+ty		:	type_id
+		|	LBRACE tyfields RBRACE
+		|	ARRAY OF type_id
+		;
+tyfields:	/* epsilon */
+		|	ID COLON type_id tyfs_t
+		;
+tyfs_t	:	/* epsilon */
+		|	COMMA ID COLON type_id tyfs_t
+		;
+type_id	:	ID
+		;
+vardec	:	VAR ID ASSIGN exp
+		|	VAR ID COLON type_id ASSIGN exp
+		;
+fundec	:	FUNCTION ID LPAREN tyfields RPAREN EQ exp
+		|	FUNCTION ID LPAREN tyfields RPAREN COLON type_id EQ exp
+		;
+args	:	/* epsilon */
+		|	exp args_t
+		;
+args_t	:	/* epsilon */
+		|	COMMA exp args_t
+		;
+record	:	/* epsilon */
+		|	ID EQ exp record_t
+		;
+record_t:	/* epsilon */
+		|	COMMA ID EQ exp record_t
+		;
+lval	:	ID
+		|	lval_t
+		;
+lval_t	:	ID DOT ID
+		|	lval_t DOT ID
+		|	ID LBRACK exp RBRACK
+		|	lval_t LBRACK exp RBRACK
+		;
+exp		:	lval
+		|	NIL
+		|	INT
+		|	STRING
+		|	MINUS exp 
+		|	LPAREN exp_seq RPAREN
+		|	ID LPAREN args RPAREN
+		|	ID LBRACE record RBRACE
+		|	ID LBRACK exp RBRACK OF exp
+		|	lval ASSIGN exp
+		|	IF exp THEN exp ELSE exp 
+		|	IF exp THEN exp %prec LOWER_THAN_ELSE
+		|	WHILE exp DO exp
+		|	FOR ID ASSIGN exp TO exp DO exp
+		|	BREAK
+		|	LET decs IN exp_seq	END
+		|	exp MINUS exp
+		|	exp DIVIDE exp
+		|	exp TIMES exp
+		|	exp EQ exp
+		|	exp NEQ exp
+		|	exp GT exp
+		|	exp LT exp
+		|	exp GE exp
+		|	exp LE exp
+		|	exp AND exp
+		|	exp OR exp
+		|	exp PLUS exp
+		;
+exp_seq	:	/* epsilon */
+		|	exp exp_seq_t
+		;
+exp_seq_t:	/* epsilon */
+		|	SEMICOLON exp exp_seq_t
 
 
 
